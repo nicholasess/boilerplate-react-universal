@@ -4,7 +4,8 @@ module.exports = (content) => {
 	<title>Website</title>
 	</head>
 	<body>
-		${content}
+		<div id="root">${content}</div>
+		<script src="client.js"></script>
 	</body>
 	</html>`
 }

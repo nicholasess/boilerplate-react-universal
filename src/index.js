@@ -8,7 +8,7 @@ const app = express();
 const Mockup = require('./helpers/mockup')
 // app.use(cors())
 // app.use(compression())
-app.use(express.static('build/client'))
+app.use(express.static('build'))
 
 app.get('*', (req, res) => {
 	let content = Mockup(renderToString(<App />))

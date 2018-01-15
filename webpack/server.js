@@ -9,7 +9,7 @@ const server = {
   })],
   entry: path.join(__dirname, '..', './src/index.js'),
   output: {
-    filename: 'bundle.js',
+    filename: 'server.js',
     path: path.join(__dirname, '..', 'build'),
   }
 }
