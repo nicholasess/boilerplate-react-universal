@@ -24,7 +24,7 @@ const mockup = (content) => {
 
 module.exports = (req) => {
 	let content = renderToString(
-		<StaticRouter location={req} context={{}}>
+		<StaticRouter location={req.path} context={{}}>
 			<Routes />
 		</StaticRouter>
 	)
