@@ -1,9 +1,8 @@
 import React from 'react'
 
-
 export default () => (
 	<div style={styles.container}>
-		<div>Hello World</div>
+		<div>Home component</div>
 	</div>
 )
 

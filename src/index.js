@@ -1,7 +1,4 @@
-const express = require('express')
-const React = require('react')
-const renderToString = require('react-dom/server').renderToString
-const App = require('./client/components/App').default
+import express from 'express'
 const app = express();
 // const cors = require('cors')
 // const compression = require('compression');
@@ -11,8 +8,7 @@ const Mockup = require('./helpers/mockup')
 app.use(express.static('build'))
 
 app.get('*', (req, res) => {
-	let content = Mockup(renderToString(<App />))
-	return res.send(content)
+	return res.send(Mockup(req))
 })
 
 app.listen(3000, () => {
